@@ -9,3 +9,7 @@ npm install postcss-px-to-viewport --save-dev
 npm install lib-flexible --save-dev
 <!-- npm install postcss-px2rem --save-dev -->
 <!-- npm install px2rem-loader --save-dev -->
+
+
+
+git subtree push --prefix dist origin gh-pages 
