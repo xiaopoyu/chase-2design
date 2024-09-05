@@ -29,7 +29,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHistory('/chase-2design/'),
+    history: createWebHistory('/'),
     routes
 });
 

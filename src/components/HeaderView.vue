@@ -6,7 +6,7 @@
                     @mouseenter="showNavigation(index)"
                     @mouseleave="hiddenNavigation(index)"
                 >
-                    <a :href="item.link"  >
+                    <router-link :to="{name: item.link}"  >
                         <div  class="header-navigation-relative" >
                             <div class="header-navigation-cn">{{ item.cnName }}</div>
                             <span  class="header-navigation-en">{{ item.name }}</span>
@@ -16,7 +16,7 @@
                             <div class="header-navigation-hover-cn">{{ item.cnName }}</div>
                             <span  class="header-navigation-hover-en">{{ item.name }}</span>
                         </div>
-                    </a>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -74,10 +74,10 @@ export default {
             import("@/assets/css/pc/header.css");
         }
         const menuItems = [
-            { cnName: "项目", name: "PROJECTS", link: `/chase-2design/projects` },
-            { cnName: "服务", name: "SERVICE", link: "/chase-2design/service" },
-            { cnName: "我们", name: "ABOUT", link: "/chase-2design/about" },
-            { cnName: "联系", name: "CONTACT", link: "/chase-2design/contact" },
+            { cnName: "项目", name: "PROJECTS", link: 'projects' },
+            { cnName: "服务", name: "SERVICE", link: 'service' },
+            { cnName: "我们", name: "ABOUT", link: 'about' },
+            { cnName: "联系", name: "CONTACT", link: 'contact' },
         ]
         return {
             menuText : 'MENU',
