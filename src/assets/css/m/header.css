@@ -1,0 +1,102 @@
+
+.app-header {
+    font-family: "Seravek_Medium";
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    z-index: 0;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 20vh;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.header-hamburger {
+    height: 80apx;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.header-hamburger-close {
+    height: 5apx;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-hamburger-line {
+    width: 100apx;
+    height: 10apx;
+    background-color: white;
+}
+
+.header-hamburger-close-line {
+    width: 100apx;
+    height: 10apx;
+    background-color: black;
+}
+
+.header-overlay {
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    z-index: 9999;
+}
+
+
+.header-navigation {
+    /* width: 90%;
+    height: 90%; */
+    /* display: flex; */
+    font-family: AlibabaPuHui;
+}
+.header-navigation-relative, .header-navigation-before {
+    align-items: center;
+    /* line-height: 5px; */
+    display: flex;
+    position: relative;
+}
+
+.header-navigation-cn {
+    font-family: AlibabaPuHui;
+    margin-right: 100apx;
+    white-space: nowrap;
+}
+
+.header-navigation-en {
+    font-size: 200apx;
+}
+
+.header-navigation a {
+    width: 100%;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    /* 去掉下划线 */
+    border: none;
+    /* 去掉边框 */
+    background: none;
+    /* 去掉背景 */
+    color: inherit;
+    /* 继承父元素的颜色 */
+    font-family: Seravek_Medium;
+    font-weight: bold;
+}

@@ -1,0 +1,137 @@
+.app-header {
+    font-family: "Seravek_Medium";
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    z-index: 0;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 20vh;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+
+.header-hamburger {
+    height: 30apx;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.header-hamburger-close {
+    height: 2apx;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-hamburger-line {
+    width: 40apx;
+    height: 2apx;
+    background-color: white;
+}
+
+.header-hamburger-close-line {
+    width: 40apx;
+    height: 2apx;
+    background-color: black;
+}
+
+.header-overlay {
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    z-index: 9997;
+    padding-top: 25vh;
+    justify-content: flex-start;
+}
+
+.header-navigation {
+    width: 80%;
+    /* height: 90%; */
+    margin: 0 10%;
+    /* display: flex; */
+    font-family: AlibabaPuHui;
+    
+}
+
+.header-navigation-relative, .header-navigation-before {
+    align-items: center;
+    /* line-height: 5px; */
+    display: flex;
+    position: relative;
+}
+
+.header-navigation-hover {
+    width: 0%;
+    align-items: center;
+    line-height: 5px;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    overflow: hidden;
+    transition: width 1s ease;
+}
+
+.header-navigation-cn {
+    margin-right: 20px;
+    white-space: nowrap;
+}
+.header-navigation-hover-cn{
+    margin-right: 20px;
+    white-space: nowrap;
+    color: #b82632;
+}
+
+.header-navigation-en {
+    /* font-size: 200apx; */
+    font-size: 8em;
+    font-weight: 500;
+    line-height: 1.4
+}
+
+.header-navigation-hover-en{
+    color: #b82632;
+    /* font-size: 200apx; */
+    font-size: 8em;
+    font-weight: 500;
+    line-height: 1.4
+}
+
+.header-navigation a {
+    width: 100%;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 5px;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    /* 去掉下划线 */
+    border: none;
+    /* 去掉边框 */
+    background: none;
+    /* 去掉背景 */
+    color: inherit;
+    /* 继承父元素的颜色 */
+    font-family: Seravek_Medium;
+    font-weight: bold;
+}

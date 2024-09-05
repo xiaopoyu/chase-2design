@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+html,
+body,
+#app {
+    font-family: Seravek, AlibabaPuHui, 'Noto Sans SC', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+.cursor-circle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: gray;
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* 增加透明度的过渡效果 */
+    z-index: 9998;
+    opacity: 0.5; /* 设置初始透明度为0.5 */
+}
+
+/* 圆圈放大的样式 */
+.cursor-circle-scale {
+    transform: scale(2); /* 放大2倍 */
+}
+@font-face {
+    font-family: 'AlibabaPuHui';
+    src: url('@/assets/fonts/AlibabaPuHui_Thin.ttf') format('truetype');
+    font-weight: 100 900; /* 支持从细到粗的所有权重 */
+    font-stretch: 50% 200%; /* 支持从窄到宽的所有变体 */
+    font-display: fallback; /* 使用 fallback 字体，直到自定义字体加载完成 */
+}
+
+@font-face {
+    font-family: 'Seravek';
+    src: url('@/assets/fonts/Seravek_Basic_ExtraLight.otf') format('opentype');
+    font-weight: 100 900; /* 支持从细到粗的所有权重 */
+    font-stretch: 50% 200%; /* 支持从窄到宽的所有变体 */
+    font-display: fallback; /* 使用 fallback 字体，直到自定义字体加载完成 */
+}
+
+@font-face {
+    font-family: 'Seravek_Bold';
+    src: url('@/assets/fonts/Seravek_Basic_Bold.otf') format('opentype');
+    font-weight: 100 900; /* 支持从细到粗的所有权重 */
+    font-stretch: 50% 200%; /* 支持从窄到宽的所有变体 */
+    font-display: fallback; /* 使用 fallback 字体，直到自定义字体加载完成 */
+}
+
+@font-face {
+    font-family: 'Seravek_Medium';
+    src: url('@/assets/fonts/Seravek_Basic_Medium.otf') format('opentype');
+    font-weight: 100 900; /* 支持从细到粗的所有权重 */
+    font-stretch: 50% 200%; /* 支持从窄到宽的所有变体 */
+    font-display: fallback; /* 使用 fallback 字体，直到自定义字体加载完成 */
+}
+
+@font-face {
+    font-family: 'Acumin_BdPro';
+    src: url('@/assets/fonts/Acumin_BdPro.otf') format('opentype');
+    font-weight: 100 900; /* 支持从细到粗的所有权重 */
+    font-stretch: 50% 200%; /* 支持从窄到宽的所有变体 */
+    font-display: fallback; /* 使用 fallback 字体，直到自定义字体加载完成 */
+}

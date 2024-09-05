@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunkchase_2design_app"]=self["webpackChunkchase_2design_app"]||[]).push([[48],{2048:function(e,s,p){p.r(s)}}]);
