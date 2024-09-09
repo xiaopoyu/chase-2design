@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "gh-pages -d dist -r https://github.com/xiaopoyu/chase-2design.git"
+    "deploy": "gh-pages -d dist -r https://github.com/xiaopoyu/chase-2design.git",
+    "clean": "rm -rf dist"
   },
   "homepage": "https://xiaopoyu.github.io/chase-2design/",
   "dependencies": {
