@@ -12,7 +12,17 @@
     <link rel="preload" href="<%= BASE_URL %>fonts/Acumin_BdPro.otf" as="font" type="font/otf" crossorigin> -->
     
   </head>
+  <script>
+    (function () {
+      const redir = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redir && redir !== location.href) {
+        history.replaceState(null, null, redir);
+      }
+    })();
+  </script>
   <body>
     <div id="app"></div>
   </body>
+
 </html>
