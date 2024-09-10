@@ -1,7 +1,6 @@
 const { defineConfig } = require('@vue/cli-service')
 
 module.exports = defineConfig({
-    assetsPublicPath: '/',
     publicPath: '/chase-2design/',
     devServer:{
         host: '0.0.0.0',
