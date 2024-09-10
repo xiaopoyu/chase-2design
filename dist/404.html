@@ -1,10 +1,14 @@
+<script>
+  sessionStorage.redirect = location.href;
+</script>
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="refresh" content="0; URL='/'">
     <meta charset="utf-8">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico"> 
+    <link rel="icon" href="favicon.ico"> 
     <!-- <link rel="preload" href="<%= BASE_URL %>fonts/Seravek_Basic_ExtraLight.otf" as="font" type="font/otf" crossorigin>
     <link rel="preload" href="<%= BASE_URL %>fonts/Seravek_Basic_Bold.otf" as="font" type="font/otf" crossorigin>
     <link rel="preload" href="<%= BASE_URL %>fonts/Seravek_Basic_Medium.otf" as="font" type="font/otf" crossorigin>
