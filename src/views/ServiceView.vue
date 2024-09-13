@@ -87,6 +87,10 @@ export default {
 </script>
 
 <style>
+[v-cloak] {
+    display: none !important;
+}
+
 .service-page {
     font-family: "Seravek";
     color: rgb(255, 255, 255);

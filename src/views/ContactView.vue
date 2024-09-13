@@ -53,6 +53,10 @@ export default {
 </script>
 
 <style>
+[v-cloak] {
+    display: none !important;
+}
+
 .contact-page {
     margin-top: 20vh;
     font-family: "Seravek", sans-serif;

@@ -95,15 +95,15 @@ export default {
 </script>
 	
 <style >
+[v-cloak] {
+    display: none !important;
+}
+
 .container{
     height: 1260apx;
     width: 2240apx;
     padding: 0;
     margin: 0;
-}
-
-[v-cloak] {
-    display: none !important;
 }
 
 .dot {

@@ -132,6 +132,10 @@ export default {
 </script>
 
 <style >
+[v-cloak] {
+    display: none !important;
+}
+
 .projects-page {
     font-family: "Seravek";
     height: 1260apx;

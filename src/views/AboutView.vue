@@ -69,6 +69,10 @@ export default {
 </script>
 
 <style>
+[v-cloak] {
+    display: none !important;
+}
+
 .about-page {
     font-family: "Seravek", sans-serif;
     color :black;
