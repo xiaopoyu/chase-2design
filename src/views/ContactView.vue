@@ -2,6 +2,12 @@
     <HeaderView :default-color="'white'"/>
     <div class="contact-page">
         <div class="contact-left">
+            <!-- <div  class="concat email" @click="copyText(item.text)">
+                21588080@QQ.com
+            </div>
+            <div  class="concat phone" @click="copyText(item.text)">
+                +86&nbsp;&nbsp;18616991221
+            </div> -->
             <div v-for="(item,index) in contactItems" :key="index"
                 :class="['concat',this.type]" @click="copyText(item.text)"
             >
@@ -56,8 +62,8 @@ export default {
 }
 .contact-left {
     margin-top:22%;
-    margin-left: 5vw;
-    height: 20vh;
+    margin-left: 10%;
+    height: 400apx;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -68,9 +74,11 @@ export default {
     align-items: center;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    font-size: 30apx;
+    font-size: 25apx;
     font-family: "Seravek";
-    line-height: 2;
+    line-height: 3;
+    word-spacing: 2apx;
+    letter-spacing: 2apx;
     z-index: 15;
 }
 
@@ -86,7 +94,6 @@ export default {
 }
 
 .contact-right-1, .contact-right-2{
-    
     font-size: 300apx;
     margin: 0;
     padding: 0;
@@ -97,13 +104,12 @@ export default {
 }
 
 .contact-right-1{
-    font-size: 300apx;
+    font-size: 210apx;
     text-align: left;   
     justify-content: flex-start;
 }
 
 .contact-right-1-bol{
-    font-size: 1em;
     transform: rotate(10deg);
 }
 

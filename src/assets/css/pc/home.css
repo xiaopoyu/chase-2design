@@ -8,20 +8,60 @@
 
 
 @keyframes grow {
-    to {
-        font-size: 25vw;
-        font-weight: bolder;
-        opacity: 1;
-        top:50%;
-        left:5%;
+    0% {
+        clip-path: ellipse(0% 0% at 50% 0%)
+    }
+    10% {
+        clip-path: ellipse(10% 20% at 50% 0%);
+    }
+    20% {
+        clip-path: ellipse(20% 40% at 50% 0%);
+    }
+    30% {
+        clip-path: ellipse(30% 60% at 50% 0%);
+    }
+    40% {
+        clip-path: ellipse(40% 90% at 50% 0%);
+    }
+    50% {
+        clip-path: ellipse(50% 110% at 50% 0%);
+    }
+    60% {
+        clip-path: ellipse(60% 130% at 50% 0%);
+    }
+    70% {
+        clip-path: ellipse(70% 150% at 50% 0%);
+    }
+    80% {
+        clip-path: ellipse(80% 170% at 50% 0%);
+    }
+    90% {
+        clip-path: ellipse(90% 190% at 50% 0%);
+    }
+    100% {
+        clip-path: ellipse(100% 210% at 50% 0%);
     }
 }
+
 .hello-animate {
-    animation: grow 1s forwards;
+    /* animation: grow 1s forwards; */
     color: #ffdd00;
     font-family: "Acumin_BdPro", sans-serif;
+    font-size: 400apx;
+    top: 56%;
+    left: 10%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    line-height: 220apx;
+    animation: grow 1s linear forwards;
 }
 
-.dotText {
-    position: absolute;
+.home-content{
+    font-size: 20apx;
+    font-family: "Seravek";
+    color: #ffdd00;
+    letter-spacing: 4apx;
+    word-spacing: 4apx;
+    line-height: 40apx;
 }

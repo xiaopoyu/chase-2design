@@ -119,7 +119,6 @@ export default {
 
 .service-page-sel::after{
     content: "";
-    height: 1apx;
     border-width: 0.5px;
     border-style: solid;
     width: 286apx;
@@ -145,7 +144,7 @@ export default {
     text-align: center;
     justify-content: space-between;
     position: absolute;
-    top:400apx;
+    top:450apx;
     right: 210apx;
     font-size: 230apx;
 }
@@ -171,7 +170,7 @@ export default {
 }
 
 .service-page-1-3-left {
-    font-size: 40apx;
+    font-size: 25apx;
     width: 500apx;
     display: flex;
     justify-content: right;
@@ -181,7 +180,7 @@ export default {
 }
 
 .service-page-1-3-right {
-    font-size: 26apx;
+    font-size: 20apx;
     width: 1000apx;
     padding-left:100apx;
     display: flex;
@@ -220,10 +219,10 @@ export default {
 }
 
 .service-page-2-left-title-text{
-    font-size: 30apx;
+    font-size: 25apx;
     letter-spacing: 4apx;
     line-height: 2;
-    margin-left: 60apx;
+    margin-left: 30apx;
     text-transform: uppercase;
 }
 
@@ -231,10 +230,11 @@ export default {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    width: 880apx;
-    font-size: 22apx;
+    width: 1000apx;
+    font-size: 21apx;
     text-align: left;
     line-height: 2;
+    letter-spacing: 2apx;
     position: relative; /* 确保元素可以相对于其正常位置移动 */
     top: -40apx; /* 向上移动10px */
 }

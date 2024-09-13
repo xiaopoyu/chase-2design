@@ -2,19 +2,11 @@
     <div v-show="isMenuOpen" class="header-overlay">
         <div>
             <div class="header-navigation" v-for="(item, index) in menuItems" :key="index">
-                <div 
-                    @mouseenter="showNavigation(index)"
-                    @mouseleave="hiddenNavigation(index)"
-                >
-                    <router-link :to="{name: item.link}"  >
+                <div >
+                    <router-link :to="{name: item.link}" >
                         <div  class="header-navigation-relative" >
                             <div class="header-navigation-cn">{{ item.cnName }}</div>
                             <span  class="header-navigation-en">{{ item.name }}</span>
-                        </div>
-                        
-                        <div v-if="!isMobile" :id="'navigationHover' + index" class="header-navigation-hover" style="width: 0%;">
-                            <div class="header-navigation-hover-cn">{{ item.cnName }}</div>
-                            <span  class="header-navigation-hover-en">{{ item.name }}</span>
                         </div>
                     </router-link>
                 </div>
@@ -24,9 +16,13 @@
     <div class="app-header" :style="headerStyle" >
         <div class="header-left-section">
             <div class="header-div header-div-left">
-                <router-link v-cloak @click="toHome" to="/" class="_2_design_studio" :style="menuStyle" 
-                @mouseenter="handleMouseEnter()"
-                @mouseleave="handleMouseLeave()">
+                <router-link v-cloak 
+                    @click="toHome" 
+                    to="/" 
+                    class="_2_design_studio" 
+                    :style="menuStyle" 
+                    @mouseenter="handleMouseEnter()"
+                    @mouseleave="handleMouseLeave()">
                     2 DESIGN STUDIO
                 </router-link>
             </div>
@@ -74,10 +70,10 @@ export default {
             import("@/assets/css/pc/header.css");
         }
         const menuItems = [
-            { cnName: "项目", name: "PROJECTS", link: 'projects' },
-            { cnName: "服务", name: "SERVICE", link: 'service' },
-            { cnName: "我们", name: "ABOUT", link: 'about' },
-            { cnName: "联系", name: "CONTACT", link: 'contact' },
+            { cnName: "( 01 )", name: "PROJECTS", link: 'projects' },
+            { cnName: "( 02 )", name: "SERVICE", link: 'service' },
+            { cnName: "( 03 )", name: "ABOUT", link: 'about' },
+            { cnName: "( 04 )", name: "CONTACT", link: 'contact' },
         ]
         return {
             menuText : 'MENU',
@@ -198,11 +194,12 @@ export default {
 }
 .header-menu-text {
     /* width: 4vw; */
-    font-family: Seravek_Medium;
-    font-size: inherit;
+    font-family: "Seravek";
+    font-size: 22apx;
 }
+
 ._2_design_studio {
-    /* font-family: "Seravek_Medium"; */
+    font-size: 22apx;
     text-transform: uppercase;
     position: absolute;
     text-decoration: none;
@@ -218,7 +215,7 @@ export default {
 }
 
 .header-menu-button {
-    font-size: inherit;
+    font-size: 22apx;
     position: relative;
     display: flex;
     align-items: center;
@@ -244,24 +241,28 @@ export default {
     display: flex;
     cursor: pointer; /* 让鼠标悬停时显示为可点击状态 */
     /* margin-left: 0.5vw; */
-    margin-left: 10px;
+    margin-left: 30apx;
+    position: relative;
+    
 }
 
 .header-hamburger-line-3,
 .header-hamburger-line-4 {
     transform-origin: center center; /* 确保围绕中心点旋转 */
     transition: transform 0.1s ease, background-color 0.1s ease;
+    
 }
 
 /* 定义叉号状态的旋转 */
 .header-hamburger.active .header-hamburger-line-3 {
     transform: rotate(45deg);
+    position: absolute;
 }
 
 .header-hamburger.active .header-hamburger-line-4 {
     transform: rotate(-45deg);
+    position: absolute;
 }
-
 
 
 </style>

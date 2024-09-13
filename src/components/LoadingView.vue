@@ -44,8 +44,8 @@ export default {
                 load_page.style.display = 'flex';
                 load_page.style.justifyContent = 'center';
                 load_page.style.alignItems = 'center';
-                // load_page.style.width = '100%';
-                // load_page.style.height = `100%`; // 注意这里需要加上 'px'
+                load_page.style.width = '100%';
+                load_page.style.height = `100%`; // 注意这里需要加上 'px'
                 load_page.style.backgroundColor = 'black';
                 load_page.style.zIndex = '9999';
             }
@@ -57,7 +57,7 @@ export default {
             }
             if (content_page) {
                 const contentHeight = screenWidth * 1260 / 2240 * 0.9;
-                content_page.style.height = `${contentHeight}px`;
+                // content_page.style.height = `${contentHeight}px`;
                 dot.style.top = `${(screenHeight- contentHeight)/2 + contentHeight*0.12}px`;
             }
             if (load_page) {
@@ -70,11 +70,11 @@ export default {
             setTimeout(() => {
                 this.isFadingOut = true;
                 this.$emit("isShowHeader", true);
-            }, 4000);
+            }, 3000);
             // 当动画结束时，触发自定义事件
             setTimeout(() => {
                 this.$emit("LoadingPageEnd");
-            }, 6000); // 假设动画总时长为5秒
+            }, 4000); // 假设动画总时长为5秒
         },
     },
 };
@@ -96,7 +96,8 @@ export default {
     height: 1260apx;
 }
 .animated-page-mask {
-    width: 90%;
+    width: 100%;
+    height: 100%;
     background-color: white;
     display: flex;
     justify-content: center;

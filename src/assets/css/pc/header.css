@@ -1,5 +1,5 @@
 .app-header {
-    font-family: "Seravek_Medium";
+    font-family: "Seravek";
     display: flex;
     color: white;
     justify-content: space-between;
@@ -19,7 +19,8 @@
 
 
 .header-hamburger {
-    height: 30apx;
+    height: 40apx;
+    width: 40apx;
     justify-content: space-evenly;
     align-items: flex-end;
 }
@@ -40,6 +41,7 @@
     width: 40apx;
     height: 2apx;
     background-color: black;
+    position: relative;
 }
 
 .header-overlay {
@@ -68,63 +70,32 @@
 }
 
 .header-navigation-relative, .header-navigation-before {
-    align-items: center;
-    /* line-height: 5px; */
-    display: flex;
     position: relative;
-}
-
-.header-navigation-hover {
-    width: 0%;
-    align-items: center;
-    line-height: 5px;
     display: flex;
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-    overflow: hidden;
-    transition: width 1s ease;
+    align-items: flex-start;
 }
 
 .header-navigation-cn {
-    margin-right: 20px;
+    font-family: "Seravek";
+    font-size: 25apx;
+    margin-right: 60apx;
     white-space: nowrap;
-}
-.header-navigation-hover-cn{
-    margin-right: 20px;
-    white-space: nowrap;
-    color: #b82632;
+    padding-top: 30apx;
+    font-style: italic;
 }
 
 .header-navigation-en {
-    /* font-size: 200apx; */
-    font-size: 8em;
-    font-weight: 500;
-    line-height: 1.4
-}
-
-.header-navigation-hover-en{
-    color: #b82632;
-    /* font-size: 200apx; */
-    font-size: 8em;
-    font-weight: 500;
-    line-height: 1.4
+/* font-size: 200apx; */
+    font-size: 180apx;
+    line-height: 1;
 }
 
 .header-navigation a {
-    width: 100%;
     align-items: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    line-height: 5px;
     text-decoration: none;
     display: flex;
     position: relative;
     overflow: hidden;
-    text-decoration: none;
     /* 去掉下划线 */
     border: none;
     /* 去掉边框 */
@@ -134,4 +105,10 @@
     /* 继承父元素的颜色 */
     font-family: Seravek_Medium;
     font-weight: bold;
+    margin-bottom: 40apx;
+}
+
+.header-navigation-en:hover {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color:white;
 }

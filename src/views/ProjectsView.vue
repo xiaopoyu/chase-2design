@@ -38,7 +38,7 @@
                         <span>{{ card.number.toString().padStart(2, '0') }}.</span>
                     </div>
                     <div class="projects-card-body">
-                        <img :src="iconPath('projects',card.image)" alt="Card Image" />
+                        <!-- <img :src="iconPath('projects',card.image)" alt="Card Image" /> -->
                     </div>
                 </div>
             </div>
